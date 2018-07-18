@@ -11,8 +11,8 @@ $login = ftp_login($ftp_conn, $ftp_username, $ftp_userpass);
 $file = "_cont/file.txt";
 $serverFile = "userpropics/user.txt";
 
-// upload file
-if (ftp_get($ftp_conn, $file, $serverFile, FTP_ASCII))
+// download file
+if (ftp_get($ftp_conn, $file, $serverFile, FTP_ASCII))	//1st:Local File Path, 2nd: Server File
   {
   echo "Successfully downloaded .";
   }
