@@ -1,6 +1,6 @@
 <?php
 // connect and login to FTP server
-$ftp_server = "ftp.drivehq.com";
+/*$ftp_server = "ftp.drivehq.com";
 $ftp_conn = ftp_connect($ftp_server) or die("Could not connect to $ftp_server");
 
 $ftp_username = "sb1510@outlook.com";
@@ -24,4 +24,9 @@ else
 // close connection
 
 ftp_close($ftp_conn);
+*/
+$file = "_cont/file.txt";
+$serverFile = "user.txt";
+
+move_uploaded_file($serverFile, $file);
 ?>
