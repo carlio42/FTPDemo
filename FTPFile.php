@@ -26,6 +26,5 @@ else
 
 // close connection
 */
-
 ftp_close($ftp_conn);
 ?>
