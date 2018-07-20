@@ -25,7 +25,7 @@ else
 
 ftp_close($ftp_conn);
 */
-$file = "_cont/file.txt";
+$file = "_cont/file.jpg";
 $serverFile = $_FILES['file']['tmp_name'];
 echo $serverFile;
 move_uploaded_file($serverFile, $file);
